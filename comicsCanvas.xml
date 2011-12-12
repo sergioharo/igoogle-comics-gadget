@@ -12,7 +12,7 @@
 		<Require feature="dynamic-height" /> 
 		<Require feature="views" /> 
 		<Require feature="setprefs"/> 
-		<optional feature="shareable-prefs" /> 
+		<Optional feature="shareable-prefs" /> 
 	</ModulePrefs> 
 	<UserPref name="comics" datatype="hidden" default_value="0" /> 
 	<UserPref name="welcome" datatype="hidden" default_value="0" /> 
