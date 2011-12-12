@@ -5,8 +5,8 @@
 		author="Sergio Haro"
 		scrolling="true"
 		description="Over 100 comics, including all your favorites (Dilbert, Calvin and Hobbes, Piled Higher and Deeper). Shows your comics all together so there is no need for clicking as well as controls to show older comics. Also, switch to Canvas view to see your comics in their full sized glory.Displays multiple comics of your choosing."
-		screenshot="https://github.com/sergioharo/igoogle-comics-gadget/raw/master/comic_screenshot.png"
-		thumbnail="https://github.com/sergioharo/igoogle-comics-gadget/raw/master/comics.jpg"
+		screenshot="http://sergioharo.github.com/igoogle-comics-gadget/comic_screenshot.png"
+		thumbnail="http://sergioharo.github.com/igoogle-comics-gadget/comics.jpg"
 		author_quote="What I thought I'd do, I 'd pretend to be one of those deaf mutes"
 		author_email="sergio.haro.jr@gmail.com"> 
 		<Require feature="dynamic-height" /> 
@@ -36,8 +36,8 @@
 			.next{cursor:pointer;margin-left:30px;}
 			.previous{cursor:pointer;margin-right:30px;}
 			a{font-size:12px;}
-			a.fblink{height:19px;width:19px;background-image:url('http://comics-google-gadget.googlecode.com/svn/trunk/igoogle/fbicon.png');position:absolute;bottom:0px;right:8px;}
-			a.twlink{height:14px;width:14px;background-image:url('http://comics-google-gadget.googlecode.com/svn/trunk/igoogle/twicon.png');position:absolute;bottom:3px;right:33px;}
+			a.fblink{height:19px;width:19px;background-image:url('http://sergioharo.github.com/igoogle-comics-gadget/fbicon.png');position:absolute;bottom:0px;right:8px;}
+			a.twlink{height:14px;width:14px;background-image:url('http://sergioharo.github.com/igoogle-comics-gadget/twicon.png');position:absolute;bottom:3px;right:33px;}
 		</style>
 		<script> 
 			/*********************************
@@ -55,11 +55,13 @@
 			var comicTypes = {GO:0, PHD: 1, YAHOO: 2, ARCAMAX: 3, XKCD: 4};
 			var todaysDate = new Date();
 		</script> 
-		<script type="text/javascript" src="https://github.com/sergioharo/igoogle-comics-gadget/raw/master/comicsCore.js"></script> 
-		<script type="text/javascript" src="https://github.com/sergioharo/igoogle-comics-gadget/raw/master/comicsPrefs.js"></script> 
-		<script type="text/javascript" src="https://github.com/sergioharo/igoogle-comics-gadget/raw/master/comicsList.js"></script> 
-		<script type="text/javascript" src="https://github.com/sergioharo/igoogle-comics-gadget/raw/master/comicsDisplay.js"></script> 
-
+		<script type="text/javascript" src="http://sergioharo.github.com/igoogle-comics-gadget/comicsCore.js"></script> 
+		<script type="text/javascript" src="http://sergioharo.github.com/igoogle-comics-gadget/comicsPrefs.js"></script> 
+		<script type="text/javascript" src="http://sergioharo.github.com/igoogle-comics-gadget/comicsList.js"></script> 
+		<script type="text/javascript" src="http://sergioharo.github.com/igoogle-comics-gadget/comicsDisplay.js"></script> 
+        <script>
+            gadgets.util.registerOnLoadHandler(initDisplay);
+        </script>
         
 		<div> 
 			<div id="header"> 
