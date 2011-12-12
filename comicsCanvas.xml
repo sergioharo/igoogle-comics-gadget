@@ -55,7 +55,7 @@
 			var comicTypes = {GO:0, PHD: 1, YAHOO: 2, ARCAMAX: 3, XKCD: 4};
 			var todaysDate = new Date();
 		</script> 
-		<script type="text/javascript" src="https://github.com/sergioharo/igoogle-comics-gadget/raw/master/igoogle/comicsCore.js"></script> 
+		<script type="text/javascript" src="https://github.com/sergioharo/igoogle-comics-gadget/raw/master/comicsCore.js"></script> 
 		<script type="text/javascript" src="https://github.com/sergioharo/igoogle-comics-gadget/raw/master/comicsPrefs.js"></script> 
 		<script type="text/javascript" src="https://github.com/sergioharo/igoogle-comics-gadget/raw/master/comicsList.js"></script> 
 		<script type="text/javascript" src="https://github.com/sergioharo/igoogle-comics-gadget/raw/master/comicsDisplay.js"></script> 
