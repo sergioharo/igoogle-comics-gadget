@@ -59,7 +59,9 @@
 		<script type="text/javascript" src="http://sergioharo.github.com/igoogle-comics-gadget/comicsPrefs.js"></script> 
 		<script type="text/javascript" src="http://sergioharo.github.com/igoogle-comics-gadget/comicsList.js"></script> 
 		<script type="text/javascript" src="http://sergioharo.github.com/igoogle-comics-gadget/comicsDisplay.js"></script> 
-
+        <script>
+            gadgets.util.registerOnLoadHandler(initDisplay);
+        </script>
         
 		<div> 
 			<div id="header"> 
