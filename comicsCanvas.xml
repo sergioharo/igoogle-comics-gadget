@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module> 
-	<ModulePrefs title="Comics"
+	<ModulePrefs title="Test Comics"
 		height="250"
 		author="Sergio Haro"
 		scrolling="true"
 		description="Over 100 comics, including all your favorites (Dilbert, Calvin and Hobbes, Piled Higher and Deeper). Shows your comics all together so there is no need for clicking as well as controls to show older comics. Also, switch to Canvas view to see your comics in their full sized glory.Displays multiple comics of your choosing."
-		screenshot="http://comics-google-gadget.googlecode.com/svn/trunk/igoogle/comic_screenshot.png"
-		thumbnail="http://comics-google-gadget.googlecode.com/svn/trunk/igoogle/comics.jpg"
+		screenshot="https://github.com/sergioharo/igoogle-comics-gadget/raw/master/comic_screenshot.png"
+		thumbnail="https://github.com/sergioharo/igoogle-comics-gadget/raw/master/comics.jpg"
 		author_quote="What I thought I'd do, I 'd pretend to be one of those deaf mutes"
 		author_email="sergio.haro.jr@gmail.com"> 
 		<Require feature="dynamic-height" /> 
@@ -19,15 +19,8 @@
 	<UserPref name="autoheight" display_name="Auto-Adjust Height" datatype="bool" default_value="false" /> 
 	<Content type="html" view="home,canvas,profile"> 
 		<![CDATA[
-		<!-- ALm6fM2hgUL3LFipNWHI2RW/5J1IjytMzoWheeTHJV+ypIvmCCkxSxrfN1IIM/+H4H9Pp6J5KIn4CRUgkyfiDPJLCxj0as+Vvx3k10SwYpa7Coi7T/gKYlfEIpn2X4onYode4tGqjPPzNInEXtd6Y8b/sijEB7LYAL3spsX/72tJbb5aKcjlI0s= -->
-		<style type="text/css">
+        <style type="text/css">
 			#content{margin-top:5px;overflow:auto;}
-			#newstuff, #oldstuff {display: none;}
-			.clickzone { position: absolute; width: 15px; height: 15px}
-			.clickzone0 { top: 0; left: 0}
-			.clickzone1 { top: 0; right: 0}
-			.clickzone2 { bottom: 0; left: 0}
-			.clickzone3 { bottom: 0; right: 0}
 			#prefsDiv{overflow:auto;}
 			#header{text-align:right;padding-right:4px;}
 			.hd{text-align:right;padding-right:4px;}
@@ -62,59 +55,13 @@
 			var comicTypes = {GO:0, PHD: 1, YAHOO: 2, ARCAMAX: 3, XKCD: 4};
 			var todaysDate = new Date();
 		</script> 
-		<script type="text/javascript" src="http://comics-google-gadget.googlecode.com/svn/trunk/igoogle/comicsCore.js"></script> 
-		<script type="text/javascript" src="http://comics-google-gadget.googlecode.com/svn/trunk/igoogle/comicsPrefs.js"></script> 
-		<script type="text/javascript" src="http://comics-google-gadget.googlecode.com/svn/trunk/igoogle/comicsList.js"></script> 
-		<script type="text/javascript" src="http://comics-google-gadget.googlecode.com/svn/trunk/igoogle/comicsDisplay.js"></script> 
-        <script>
-            var current_key = 0;
-            
-            function key(num) {
-                current_key = current_key | num;
-                if(current_key == 15) {
-                    setOldAsDefault();
-                }
-            }
-            
-            function setOldAsDefault() {
-                prefs.set('showOld',true);
-                $('oldstuff').style.display = 'block';
-                $('newstuff').style.display = 'none';
-                initDisplay();
-            }
-            
-            function keyOnLoad() {
-                if(showOldStuff) {
-                    $('oldstuff').style.display = 'block';
-                    initDisplay();
-                } else {
-                    $('newstuff').style.display = 'block';
-                }
-            }
-            
-            gadgets.util.registerOnLoadHandler(keyOnLoad);            
-        </script>
-        <div id="newstuff" onkeyup="onKey(event)">
-            <br />
-            Hi Guys, <br /><br />
-            
-            Thanks to all those who have enjoyed my gadget for the last few years.
-            Unforunately, the folks over at AM Universal (gocomics.com) have forced
-            Google to remove my gadget from the listings and now they want me to 
-            shutdown the gadget for all the existing users. And they want all you
-            guys to start using their terrible google gadget.<br/><br />
-            
-            If you wish to complain, feel free to send an email to one of the following
-            addresses: jvivona@amuniversal.com, salesdirector@amuniversal.com, or jperes@amuniversal.com<br/><br/>
-            
-            Sergio<br/>
-            <div class="clickzone clickzone0" onclick="key(1)"></div>
-            <div class="clickzone clickzone1" onclick="key(2)"></div>
-            <div class="clickzone clickzone2" onclick="key(4)"></div>
-            <div class="clickzone clickzone3" onclick="key(8)"></div>
-        </div>
+		<script type="text/javascript" src="https://github.com/sergioharo/igoogle-comics-gadget/raw/master/igoogle/comicsCore.js"></script> 
+		<script type="text/javascript" src="https://github.com/sergioharo/igoogle-comics-gadget/raw/master/comicsPrefs.js"></script> 
+		<script type="text/javascript" src="https://github.com/sergioharo/igoogle-comics-gadget/raw/master/comicsList.js"></script> 
+		<script type="text/javascript" src="https://github.com/sergioharo/igoogle-comics-gadget/raw/master/comicsDisplay.js"></script> 
+
         
-		<div id="oldstuff"> 
+		<div> 
 			<div id="header"> 
 				<a href="#" onclick="globalPrevious()">All Previous</a> 
 				<span>|</span> 
